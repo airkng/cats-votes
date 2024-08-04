@@ -1,6 +1,6 @@
 package com.i_novus.education.cats_votes.controllers;
 
-import com.i_novus.education.cats_votes.dto.response.UserPublicResponseDto;
+import com.i_novus.education.cats_votes.dto.response.pub.UserPublicResponseDto;
 import com.i_novus.education.cats_votes.service.UserService;
 import com.i_novus.education.cats_votes.dto.request.UserRequestDto;
 import com.i_novus.education.cats_votes.dto.response.UserResponseDto;

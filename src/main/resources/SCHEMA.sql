@@ -10,6 +10,15 @@ create table tuser
   deleted   timestamp
 );
 
+create table if not exists tuser_auth (
+  id bigint primary key,
+  token text,
+  available_for timestamp,
+  user_id bigint references tuser(id),
+  created timestamp default now(),
+  deleted timestamp
+);
+
 create table tcat
 (
   cat_id    bigint primary key,
