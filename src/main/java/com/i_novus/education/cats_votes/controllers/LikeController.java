@@ -16,7 +16,8 @@ import java.util.List;
 
 import static com.i_novus.education.cats_votes.Commons.getUserId;
 
-@RestController("/likes")
+@RestController
+@RequestMapping("/likes")
 @RequiredArgsConstructor
 public class LikeController {
     private final LikeService service;

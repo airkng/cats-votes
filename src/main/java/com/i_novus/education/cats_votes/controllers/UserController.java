@@ -21,7 +21,8 @@ import org.springframework.web.bind.annotation.*;
 
 import static com.i_novus.education.cats_votes.Commons.getUserId;
 
-@RestController("/users")
+@RestController
+@RequestMapping("/users")
 @RequiredArgsConstructor
 @Validated
 @Tag(name = "User API", description = "Пользовательское API для CRUD-операций")

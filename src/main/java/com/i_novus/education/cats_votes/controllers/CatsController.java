@@ -19,7 +19,8 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import static com.i_novus.education.cats_votes.Commons.getUserId;
 
-@RestController("/cats")
+@RestController
+@RequestMapping("/cats")
 @RequiredArgsConstructor
 @Tag(name = "Cats API", description = "API для CRUD операций с кошками")
 public class CatsController {
@@ -92,7 +93,7 @@ public class CatsController {
             @ApiResponse(responseCode = "404", description = "Кошечка не найдена")
     }
     )
-    @GetMapping("/{catId}")
+    @GetMapping("/{catId}/info")
     public CatResponseDto getCatInfo(@Parameter(description = "Уникальный идентификатор кошки") @PathVariable Long catId) {
         return service.getCatPersonalInfo(catId, getUserId());
     }
