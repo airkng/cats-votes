@@ -1,8 +1,8 @@
 package com.i_novus.education.cats_votes.controllers;
 
 import com.i_novus.education.cats_votes.dto.request.CatRequestDto;
-import com.i_novus.education.cats_votes.dto.response.CatPublicResponseDto;
 import com.i_novus.education.cats_votes.dto.response.CatResponseDto;
+import com.i_novus.education.cats_votes.dto.response.pub.CatPublicResponseDto;
 import com.i_novus.education.cats_votes.service.CatsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
